@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works — Sydney Wentz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-name">Sydney Wentz</a>
+    <div class="nav-links">
+      <a href="works.html" class="active">Works</a>
+      <a href="about.html">About</a>
+      <a href="mailto:swentz702@icloud.com">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1 class="page-title">Works</h1>
+    <p class="page-sub">All writing, across all forms.</p>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-genre="all">All</button>
+    <button class="filter-btn" data-genre="fiction">Fiction</button>
+    <button class="filter-btn" data-genre="poetry">Poetry</button>
+    <button class="filter-btn" data-genre="essay">Essay</button>
+  </div>
+
+  <main class="works-list">
+    <!-- Works are auto-generated here when PDFs are uploaded to the pdfs/ folders -->
+    <p class="empty-note" style="padding: 3rem 0; color: var(--ink-faint); font-size: 0.9rem;">
+      No works yet — upload a PDF to get started.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-quote"><em>"The story is always bigger than the telling."</em></p>
+    <p class="footer-copy">© 2026 Sydney Wentz · Built with words and GitHub Pages</p>
+  </footer>
+
+  <script src="js/filter.js"></script>
+</body>
+</html>
