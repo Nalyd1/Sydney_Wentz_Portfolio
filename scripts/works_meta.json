@@ -1,0 +1,9 @@
+{
+  "_instructions": "Optional: add entries here to override auto-detected info for any PDF. Key = exact PDF filename.",
+
+  "fiction_My-Story.pdf": {
+    "title": "My Story (Custom Title)",
+    "year": "2024",
+    "description": "A short description that appears on the works index page. If omitted, text is extracted from the PDF automatically."
+  }
+}
