@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Last Summer — Sydney Wentz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body class="reading-page">
+
+  <nav class="nav">
+    <a href="../../index.html" class="nav-name">Sydney Wentz</a>
+    <div class="nav-links">
+      <a href="../../works.html">← All Works</a>
+    </div>
+  </nav>
+
+  <article class="reading-article">
+    <header class="reading-header">
+      <span class="reading-genre">Fiction</span>
+      <h1 class="reading-title">The Last Summer</h1>
+      <p class="reading-byline">by Sydney Wentz · 2026</p>
+      <div class="reading-ornament" aria-hidden="true">❧</div>
+    </header>
+
+    <!-- Embedded PDF viewer -->
+    <div class="pdf-viewer">
+      <iframe
+        src="../../pdfs/fiction/The-Last-Summer.pdf"
+        title="The Last Summer — PDF"
+        class="pdf-frame"
+        loading="lazy"
+      ></iframe>
+      <a href="../../pdfs/fiction/The-Last-Summer.pdf" class="pdf-download" download>
+        ↓ Download PDF
+      </a>
+    </div>
+
+    <!-- Extracted text (shown if PDF can't render, hidden otherwise via JS) -->
+    <div class="reading-body reading-fallback" id="text-fallback" hidden>
+      <p>The Last Summer
+ by Sydney Wentz
+ 
+The summer Margot turned sixteen, the lake dried up for the first time in
+anyone's memory. It didn't happen all at once — it was gradual, the way all
+losses are, the water pulling back a little more each morning until one day her
+father stood at the edge of what used to be the dock and looked out at a field of
+cracked mud and said nothing at all.
+She had spent every summer of her life at that lake. She knew its moods the
+way she knew her own — the way it went silver before a storm, the way the far
+shore disappeared in August haze, the particular cold of it in June, before the
+sun had had time to reach the deep parts.
+Her grandmother said the lake had a name before it was called Lake Harrow. A
+name in a language nobody in the family spoke anymore, a name that meant
+something like: the place where water remembers itself. Margot had written it
+down once in a notebook she no longer had.
+She walked out onto the lakebed the morning after her father's silence. The mud
+had hardened into scales, into the pattern you see on the backs of old maps
+where the cartographer ran out of knowledge and just drew lines. Her sneakers
+left prints that filled slowly with nothing.
+At the center of where the lake had been, she found a rowboat lying on its side.
+She didn't know whose it was. She had never seen it on the water. It was the
+green of something that had been underwater for a long time, the green of
+forgetting.</p>
+      <p>She sat inside it and looked up at the sky, which was the same sky it had always
+been, indifferent and enormous and blue. A hawk circled once and didn't come
+back. She thought about all the things the lake had been holding down there in
+its cold dark — everything that had ever been dropped, everything that had ever
+sunk, everything that had ever gone in and not come back out.
+It was all still there. Just visible now.</p>
+    </div>
+
+    <footer class="reading-footer">
+      <div class="reading-ornament" aria-hidden="true">❧</div>
+      <a href="../../works.html" class="btn btn-ghost">← Back to Works</a>
+    </footer>
+  </article>
+
+  <footer class="footer">
+    <p class="footer-copy">© 2026 Sydney Wentz · Built with words and GitHub Pages</p>
+  </footer>
+
+  <script>
+    // Show text fallback if the PDF iframe fails to load
+    const frame = document.querySelector('.pdf-frame');
+    if (frame) {
+      frame.addEventListener('error', () => {
+        document.getElementById('text-fallback').hidden = false;
+      });
+    }
+  </script>
+
+</body>
+</html>
