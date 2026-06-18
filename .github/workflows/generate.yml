@@ -1,0 +1,38 @@
+name: Generate pages from PDFs
+
+on:
+  push:
+    paths:
+      - 'pdfs/**/*.pdf'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pypdf2 jinja2
+
+      - name: Generate HTML pages from PDFs
+        run: python scripts/generate_pages.py
+
+      - name: Commit generated pages
+        run: |
+          git config user.name "Portfolio Bot"
+          git config user.email "bot@portfolio"
+          git add works/ works.html
+          git diff --cached --quiet || git commit -m "Auto-generate pages from PDFs"
+          git push
