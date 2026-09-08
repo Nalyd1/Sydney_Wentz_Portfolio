@@ -25,48 +25,14 @@
       <div class="reading-ornament" aria-hidden="true">❧</div>
     </header>
 
-    <!-- Embedded PDF viewer -->
-    <div class="pdf-viewer">
-      <iframe
-        src="../../pdfs/poetry/Wooly-Mammoth.pdf"
-        title="Wooly Mammoth — PDF"
-        class="pdf-frame"
-        loading="lazy"
-      ></iframe>
-      <a href="../../pdfs/poetry/Wooly-Mammoth.pdf" class="pdf-download" download>
-        ↓ Download PDF
-      </a>
-    </div>
-
-    <!-- Extracted text (shown if PDF can't render, hidden otherwise via JS) -->
-    <div class="reading-body reading-fallback" id="text-fallback" hidden>
-      <p>Wooly Mammoth  
- 
-If I were to be the first human to see a wooly mammoth in 300 years, I would just stare at it, and 
-it, at me. Because what do you say to something you drove to extinction? What do you say to 
-something that faced the jagged -edged teeth of spears and torn fl esh by the hands of our 
-ancestors?  
- 
-I know what I would say. I would say, we remember you. I would say, there are hundreds if not 
-thousands of movies about you. I would say, as a child, I thought about you every day. I would 
-say, I haven’t thought about you in years.  
- 
-And it would stare back at me because what do you say to the product of the very thing that 
-killed your own kind?  
- 
-It wouldn’t say anything, even i f the genetic alterations allowed for the formation of vocal cords. 
-Even if its tongue could form the vowels in the word, why? Even if it was fluent in every 
-language and communicable concept. And I would stare back at it. Because what do you say to 
-something that has been dead for millennia? Something that will become the figurehead of the 
-future of science? Something that will  be driven to extinction, again and again, now that we can 
-bring them back, because we are humans and all we know is, what can we use this for?  
- 
-I know what I would say. I would say, we painted you on the walls of caves and trees. We 
-painted you and your young, great herds and packs of you traveling. We painted you drinking at 
-water holes, feeding on grass plains. We painted you with you r trunks pointed high in the air, 
-your ivory tusks piercing the skin of the men who ended you. We painted you with fingers and 
-handprints covered in smashed berries and plant matter. We painted you on the walls of our 
-homes. And I hope that will be enough.</p>
+    <!-- Extracted text (PDF removed; show text fallback) -->
+    <div class="reading-body reading-fallback" id="text-fallback">
+      <p>Wooly Mammoth</p>
+      <p>If I were to be the first human to see a wooly mammoth in 300 years, I would just stare at it, and it, at me. Because what do you say to something you drove to extinction? What do you say to something that faced the jagged-edged teeth of spears and torn flesh by the hands of our ancestors?</p>
+      <p>I know what I would say. I would say, we remember you. I would say, there are hundreds if not thousands of movies about you. I would say, as a child, I thought about you every day. I would say, I haven’t thought about you in years.</p>
+      <p>And it would stare back at me because what do you say to the product of the very thing that killed your own kind?</p>
+      <p>It wouldn’t say anything, even if the genetic alterations allowed for the formation of vocal cords. Even if its tongue could form the vowels in the word, why? Even if it was fluent in every language and communicable concept. And I would stare back at it. Because what do you say to something that has been dead for millennia? Something that will become the figurehead of the future of science? Something that will be driven to extinction, again and again, now that we can bring them back, because we are humans and all we know is, what can we use this for?</p>
+      <p>I know what I would say. I would say, we painted you on the walls of caves and trees. We painted you and your young, great herds and packs of you traveling. We painted you drinking at water holes, feeding on grass plains. We painted you with your trunks pointed high in the air, your ivory tusks piercing the skin of the men who ended you. We painted you with fingers and handprints covered in smashed berries and plant matter. We painted you on the walls of our homes. And I hope that will be enough.</p>
     </div>
 
     <footer class="reading-footer">
@@ -79,15 +45,7 @@ homes. And I hope that will be enough.</p>
     <p class="footer-copy">© 2026 Sydney Wentz · Built with words and GitHub Pages</p>
   </footer>
 
-  <script>
-    // Show text fallback if the PDF iframe fails to load
-    const frame = document.querySelector('.pdf-frame');
-    if (frame) {
-      frame.addEventListener('error', () => {
-        document.getElementById('text-fallback').hidden = false;
-      });
-    }
-  </script>
+  
 
 </body>
 </html>
