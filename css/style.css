@@ -519,7 +519,7 @@ img { max-width: 100%; display: block; }
   font-family: var(--serif);
   font-size: 1.18rem;
   line-height: 1.85;
-  color: var(--ink);
+  color: var(--amber);
 }
 
 .reading-body p {
