@@ -617,6 +617,11 @@ img { max-width: 100%; display: block; }
   color: #fff;
 }
 
+
+.indent {
+  text-indent: 40px;
+}
+
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 768px) {
   .nav { padding: 1.2rem 1.5rem; }
